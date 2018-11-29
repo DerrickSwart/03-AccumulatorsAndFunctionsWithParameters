@@ -253,7 +253,7 @@ def digits_in_power(n, k):
     ###########################################################################
     # -------------------------------------------------------------------------
     x = n ** k
-    return sum_of_digits(x) 
+    return sum_of_digits(x)
 
 def run_test_fancy_sums_of_digits():
     """ Tests the   fancy_sums_of_digits   function. """
@@ -269,6 +269,37 @@ def run_test_fancy_sums_of_digits():
     print('--------------------------------------------------')
     print('Testing the   fancy_sums_of_digits   function:')
     print('--------------------------------------------------')
+    # Test 1 (2)
+    expected = 19084
+    answer = fancy_sums_of_digits(800, 2)
+    print('Test 1 expected:', expected)
+    print('         actual:', answer)
+    # test 2 (35)
+    expected = 124309
+    answer = fancy_sums_of_digits(2, 7)
+    print('Test 2 expected:', expected)
+    print('         actual:', answer)
+
+
+
+
+
+
+    # test 3 (11,4)
+    expected = 16
+    answer = fancy_sums_of_digits(11, 4)
+    print('Test 3 expected:', expected)
+    print('         actual:', answer)
+    # test 4 (102,1)
+    expected = 3
+    answer = fancy_sums_of_digits(102, 1)
+    print('Test 4 expected:', expected)
+    print('         actual:', answer)
+    # test 4 (12345,0)
+    expected = 1
+    answer = fancy_sums_of_digits(12345, 0)
+    print('Test 4 expected:', expected)
+    print('         actual:', answer)
 
     # -------------------------------------------------------------------------
     # HINT:  For your 1st test, consider  n=10.  Figure out BY HAND
