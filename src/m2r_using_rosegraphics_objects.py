@@ -55,7 +55,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #             objects have:
 #                center point
 #                radius
-#                line thickness
+#                fill color
 #
 #     f. What does a RoseWindow RENDER method do?
 #        It renders and applies all of the points and shapes that are applied to the window
