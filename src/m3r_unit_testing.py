@@ -47,8 +47,15 @@ def run_test_distance():
     print('Test 3 expected:', expected)
     print('       actual:  ', answer)
 
+    # test 4
+    expected = 5
+    answer = distance(rg.Point(-3, -4))
+    print('Test 4 expected:', expected)
+    print('       actual:  ', answer)
+
 
 def distance(point):
+
     """
     What comes in:  An rg.Point.
     What goes out:  The distance that the rg.Point is from (0, 0).
@@ -58,7 +65,7 @@ def distance(point):
     """
     # This code has an error, on purpose.  Do NOT fix it.
     x_squared = point.x * point.x
-    y_squared = point.y * point.x
+    y_squared = point.y * point.y
 
     return math.sqrt(x_squared + y_squared)
 
@@ -69,7 +76,7 @@ def distance(point):
 main()
 
 ###############################################################################
-# TODO: 2.
+# DONE: 2.
 #
 # READ the following, asking questions as needed.
 # When you believe that you understading what is says about UNIT TESTING,
