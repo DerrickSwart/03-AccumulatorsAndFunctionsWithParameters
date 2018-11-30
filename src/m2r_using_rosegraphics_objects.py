@@ -17,7 +17,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #     a. For the RoseGraphics coordinate system:
 #
 #        -- Where is the (0, 0) point on the screen?
-#              IN THE MIDDLE ON THE LEFT SIDE OF THE WINDOW
+#              top left corner
 #
 #        -- In what direction on the screen
 #           does the positive X-axis point?
@@ -25,10 +25,11 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
 #
 #        -- In what direction on the screen
 #           does the positive Y-axis point?
-#              POSITIVE Y DIRECTION IS STRAIGHT UP
+#              POSITIVE Y DIRECTION IS down
 #
 #     b. Write a line of code that constructs a RoseWindow object:
-#            rg.Rectangle(10,7)
+#            rg.Circle(rg.Point(10,10), 10)
+
 #     c. What is the default height of a RoseWindow?
 #        (Use the HOVER trick to determine the answer to this question.)
 #            300
