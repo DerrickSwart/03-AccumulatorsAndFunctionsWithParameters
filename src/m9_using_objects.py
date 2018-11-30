@@ -142,7 +142,7 @@ def lines():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # TODO: 4. Implement and test this function.
-    rg.RoseWindow(400, 400)
+    window = rg.RoseWindow(400, 400)
     line_1 = rg.Line(rg.Point(10, 100), rg.Point(10,300))
     thick = 10
     line_1.thickness = thick
@@ -153,11 +153,14 @@ def lines():
     y = 300 - 100
     print('x coor. of midpoint:', x)
     print('y coor. of midpoint', y)
+    line_2 = rg.Line(rg.Point(50, 100), rg.Point(50,300))
 
     line_1.attach_to(window)
-    line_2.a
+    line_2.attach_to(window)
+    window.render()
 
-    line_2 = rg.Line(rg.Point(50, 100), rg.Point(50,300))
+    window.close_on_mouse_click()
+
 
 # -----------------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
